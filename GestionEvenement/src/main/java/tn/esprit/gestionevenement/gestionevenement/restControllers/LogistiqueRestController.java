@@ -11,7 +11,8 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-
+@CrossOrigin(origins = "*")
+@RequestMapping("/api/v1")
 public class LogistiqueRestController {
     ILogistique iLogistique;
     @PostMapping("/addLogistique")
